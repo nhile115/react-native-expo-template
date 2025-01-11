@@ -1,0 +1,13 @@
+{
+  "Print to console": {
+    "prefix": "layout-typescript",
+    "body": [
+      "import { View, Text } from 'react-native';",
+      "",
+      "export default function ${1:Name}Layout() {",
+      "  return <View></View>;",
+      "};"
+    ],
+    "description": "Create React Function Layout - Typescript"
+  }
+}

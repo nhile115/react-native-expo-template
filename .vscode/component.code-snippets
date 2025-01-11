@@ -1,0 +1,23 @@
+{
+  "Print to console": {
+    "prefix": "component-typescript",
+    "body": [
+      "import React, {FC} from 'react';",
+      "import {Text, View} from 'react-native';",
+      "import { IBaseComponent } from '@/components/interfaces';",
+      "import { cn } from '@/lib/utils';",
+      "",
+      "interface I${1:Name}Props extends IBaseComponent {}",
+      "",
+      "const ${1:Name}: FC<I${1:Name}Props> = ({className}) => {",
+      "  return <View className={cn(className)}><Text>${1:Name}</Text></View>",
+      "};",
+      "",
+      "${1:Name}.displayName = '${1:Name}';",
+      "",
+      "export default ${1:Name};",
+      ""
+    ],
+    "description": "Create React Function Component - Typescript"
+  }
+}
